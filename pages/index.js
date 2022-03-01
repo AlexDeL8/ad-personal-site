@@ -1,3 +1,5 @@
+import { useState, useRef, useEffect } from "react";
+
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
@@ -26,42 +28,60 @@ export default function Home() {
             </main>
 
             <footer className={styles.footer}>
-                <nav className="FooterNav">
-                    <ul className="FooterLinks">
-                        <li className="FooterLink">
+                <nav className={styles.footerNav}>
+                    <ul className={styles.footerLinks}>
+                        <li className={styles.footerLink}>
                             <a
                                 href="https://www.linkedin.com/in/alex-de-luca/"
                                 target="_blank"
                             >
-                                LinkedIn
+                                <img
+                                    // ref={image}
+                                    className={styles.footerLinkImg}
+                                    src="/linkedin-icon.png"
+                                ></img>
                             </a>
                         </li>
-                        <li className="FooterLink">
+                        <li className={styles.footerLink}>
                             <a
                                 href="https://github.com/AlexDeL8"
                                 target="_blank"
                             >
-                                Github
+                                <img
+                                    className={styles.footerLinkImg}
+                                    src="/github-icon.png"
+                                ></img>
                             </a>
                         </li>
-                        <li className="FooterLink">
+                        <li className={styles.footerLink}>
                             <a
                                 href="https://codesandbox.io/u/alexdel"
                                 target="_blank"
                             >
-                                CodeSandbox
+                                <img
+                                    className={styles.footerLinkImg}
+                                    src="/codesandbox-icon.png"
+                                ></img>
                             </a>
                         </li>
-                        <li className="FooterLink">
+                        <li className={styles.footerLink}>
                             <a
                                 href="https://codepen.io/AlexDeL"
                                 target="_blank"
                             >
-                                CodePen
+                                <img
+                                    className={styles.footerLinkImg}
+                                    src="/codepen-icon.png"
+                                ></img>
                             </a>
                         </li>
-                        <li className="FooterLink">
-                            <a href="mailto:alexnaj88@gmail.com">Email</a>
+                        <li className={styles.footerLink}>
+                            <a href="mailto:alexnaj88@gmail.com">
+                                <img
+                                    className={styles.footerLinkImg}
+                                    src="/email-icon.png"
+                                ></img>
+                            </a>
                         </li>
                     </ul>
                 </nav>
