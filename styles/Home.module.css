@@ -1,9 +1,13 @@
 .container {
-    padding: 0 2rem;
+    /* padding: 0 2rem; */
+    background-image: url("../public/main/wood-desk.jpg");
+    background-size: cover;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.6);
+    color: white;
 }
 
 .main {
-    min-height: 100vh;
+    min-height: 90vh;
     padding: 4rem 0;
     flex: 1;
     display: flex;
@@ -24,13 +28,13 @@
 }
 
 .description {
-    margin: 4rem 0;
+    /* margin: 4rem 0; */
     line-height: 1.5;
     font-size: 1.5rem;
 }
 
 .code {
-    background: #fafafa;
+    background: none;
     border-radius: 5px;
     padding: 0.75rem;
     font-size: 1.1rem;

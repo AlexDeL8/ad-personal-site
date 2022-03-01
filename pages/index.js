@@ -16,13 +16,36 @@ export default function Home() {
                 <link rel="icon" href="/personal-site-logo-tp.ico" />
             </Head>
 
+            <header>
+                <nav className="HeaderNav">
+                    <ul className="HeaderLinks">
+                        <li className="HeaderLink">
+                            <a>Home</a>
+                        </li>
+                        <li className="HeaderLink">
+                            <a>About</a>
+                        </li>
+                        <li className="HeaderLink">
+                            <a>Resume</a>
+                        </li>
+                        <li className="HeaderLink">
+                            <a>Work</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+
             <main className={styles.main}>
-                <h1 className={styles.title}>Welcome to my website</h1>
+                <img
+                    className={styles.profilePic}
+                    alt="Alex De Luca profile picture"
+                    src="/main/ad-profile.jpg"
+                ></img>
 
                 <p className={styles.description}>
                     Alex De Luca <br></br>
                     <code className={styles.code}>
-                        Software Engineer &#123;Frontend Focused&#125;
+                        Software Engineer - &#123;Frontend Focused&#125;
                     </code>
                 </p>
             </main>
