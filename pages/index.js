@@ -1,5 +1,3 @@
-import { useState, useRef, useEffect } from "react";
-
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
@@ -61,7 +59,7 @@ export default function Home() {
                                 <img
                                     // ref={image}
                                     className={styles.footerLinkImg}
-                                    src="/linkedin-icon.png"
+                                    src="/footer/linkedin-icon.png"
                                 ></img>
                             </a>
                         </li>
@@ -72,7 +70,7 @@ export default function Home() {
                             >
                                 <img
                                     className={styles.footerLinkImg}
-                                    src="/github-icon.png"
+                                    src="/footer/github-icon.png"
                                 ></img>
                             </a>
                         </li>
@@ -83,7 +81,7 @@ export default function Home() {
                             >
                                 <img
                                     className={styles.footerLinkImg}
-                                    src="/codesandbox-icon.png"
+                                    src="/footer/codesandbox-icon.png"
                                 ></img>
                             </a>
                         </li>
@@ -94,7 +92,7 @@ export default function Home() {
                             >
                                 <img
                                     className={styles.footerLinkImg}
-                                    src="/codepen-icon.png"
+                                    src="/footer/codepen-icon.png"
                                 ></img>
                             </a>
                         </li>
@@ -102,7 +100,7 @@ export default function Home() {
                             <a href="mailto:alexnaj88@gmail.com">
                                 <img
                                     className={styles.footerLinkImg}
-                                    src="/email-icon.png"
+                                    src="/footer/email-icon.png"
                                 ></img>
                             </a>
                         </li>
