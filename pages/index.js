@@ -14,20 +14,20 @@ export default function Home() {
                 <link rel="icon" href="/personal-site-logo-tp.ico" />
             </Head>
 
-            <header>
-                <nav className="HeaderNav">
-                    <ul className="HeaderLinks">
-                        <li className="HeaderLink">
-                            <a>Home</a>
+            <header className={styles.header} id="header">
+                <nav className={styles.headerNav}>
+                    <ul className={styles.headerLinks}>
+                        <li className={styles.headerLink}>
+                            <a href="#header">Home</a>
                         </li>
-                        <li className="HeaderLink">
-                            <a>About</a>
+                        <li className={styles.headerLink}>
+                            <a href="#about">About</a>
                         </li>
-                        <li className="HeaderLink">
-                            <a>Resume</a>
+                        <li className={styles.headerLink}>
+                            <a href="#resume">Resume</a>
                         </li>
-                        <li className="HeaderLink">
-                            <a>Work</a>
+                        <li className={styles.headerLink}>
+                            <a href="#work">Work</a>
                         </li>
                     </ul>
                 </nav>
@@ -41,7 +41,8 @@ export default function Home() {
                 ></img>
 
                 <p className={styles.description}>
-                    Alex De Luca <br></br>
+                    Alex De Luca
+                    <p>(he/him)</p>
                     <code className={styles.code}>
                         Software Engineer - &#123;Frontend Focused&#125;
                     </code>
