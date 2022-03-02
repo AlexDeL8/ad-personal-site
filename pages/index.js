@@ -16,6 +16,13 @@ export default function Home() {
 
             <header className={styles.header} id="header">
                 <nav className={styles.headerNav}>
+                    <a href="#header">
+                        <img
+                            className={styles.adLogo}
+                            alt="Alex De Luca logo"
+                            src="/personal-site-logo.png"
+                        ></img>
+                    </a>
                     <ul className={styles.headerLinks}>
                         <li className={styles.headerLink}>
                             <a href="#header">Home</a>
