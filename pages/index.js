@@ -1,10 +1,24 @@
 import Head from "next/head";
-import Image from "next/image";
-import styles from "../styles/Home.module.css";
+
+import SiteLogo from "../public/personal-site-logo.png"
+import SiteLogoTp from "../public/personal-site-logo-tp.png"
+
+import BackgroundImage from "../public/main/wood-desk-bw.jpg"
+import ProfilePicture from "../public/main/ad-profile.jpg"
+
+import LinkedInIcon from "../public/footer/linkedin-icon.png"
+import GithubIcon from "../public/footer/github-icon.png"
+import SandboxIcon from "../public/footer/codesandbox-icon.png"
+import CodepenIcon from "../public/footer/codepen-icon.png"
+import EmailIcon from "../public/footer/email-icon.png"
+
+import mainStyles from "../styles/Home.module.sass";
+import headerStyles from "../styles/Header.module.sass";
+import footerStyles from "../styles/Footer.module.sass";
 
 export default function Home() {
     return (
-        <div className={styles.container}>
+        <div className={mainStyles.container}>
             <Head>
                 <title>Alex De Luca</title>
                 <meta
@@ -14,100 +28,99 @@ export default function Home() {
                 <link rel="icon" href="/personal-site-logo-tp.ico" />
             </Head>
 
-            <header className={styles.header} id="header">
-                <nav className={styles.headerNav}>
+            <header className={headerStyles.header} id="header">
+                <nav className={headerStyles.headerNav}>
                     <a href="#header">
                         <img
-                            className={styles.adLogo}
+                            className={headerStyles.adLogo}
                             alt="Alex De Luca logo"
                             src="/personal-site-logo.png"
                         ></img>
                     </a>
-                    <ul className={styles.headerLinks}>
-                        <li className={styles.headerLink}>
+                    <ul className={headerStyles.headerLinks}>
+                        <li className={headerStyles.headerLink}>
                             <a href="#header">Home</a>
                         </li>
-                        <li className={styles.headerLink}>
+                        <li className={headerStyles.headerLink}>
                             <a href="#about">About</a>
                         </li>
-                        <li className={styles.headerLink}>
+                        <li className={headerStyles.headerLink}>
                             <a href="#resume">Resume</a>
                         </li>
-                        <li className={styles.headerLink}>
+                        <li className={headerStyles.headerLink}>
                             <a href="#work">Work</a>
                         </li>
                     </ul>
                 </nav>
             </header>
 
-            <main className={styles.main}>
+            <main className={mainStyles.main}>
                 <img
-                    className={styles.profilePic}
+                    className={mainStyles.profilePic}
                     alt="Alex De Luca profile picture"
                     src="/main/ad-profile.jpg"
                 ></img>
 
-                <p className={styles.description}>
+                <p className={mainStyles.description}>
                     Alex De Luca
                     <p>(he/him)</p>
-                    <code className={styles.code}>
+                    <code className={mainStyles.code}>
                         Software Engineer - &#123;Frontend Focused&#125;
                     </code>
                 </p>
             </main>
 
-            <footer className={styles.footer}>
-                <nav className={styles.footerNav}>
-                    <ul className={styles.footerLinks}>
-                        <li className={styles.footerLink}>
+            <footer className={footerStyles.footer}>
+                <nav className={footerStyles.footerNav}>
+                    <ul className={footerStyles.footerLinks}>
+                        <li className={footerStyles.footerLink}>
                             <a
                                 href="https://www.linkedin.com/in/alex-de-luca/"
                                 target="_blank"
                             >
                                 <img
-                                    // ref={image}
-                                    className={styles.footerLinkImg}
+                                    className={footerStyles.footerLinkImg}
                                     src="/footer/linkedin-icon.png"
                                 ></img>
                             </a>
                         </li>
-                        <li className={styles.footerLink}>
+                        <li className={footerStyles.footerLink}>
                             <a
                                 href="https://github.com/AlexDeL8"
                                 target="_blank"
                             >
                                 <img
-                                    className={styles.footerLinkImg}
+                                    className={footerStyles.footerLinkImg}
                                     src="/footer/github-icon.png"
                                 ></img>
                             </a>
                         </li>
-                        <li className={styles.footerLink}>
+                        <li className={footerStyles.footerLink}>
                             <a
                                 href="https://codesandbox.io/u/alexdel"
                                 target="_blank"
                             >
                                 <img
-                                    className={styles.footerLinkImg}
+                                    className={footerStyles.footerLinkImg}
                                     src="/footer/codesandbox-icon.png"
                                 ></img>
                             </a>
                         </li>
-                        <li className={styles.footerLink}>
+                        <li className={footerStyles.footerLink}>
                             <a
                                 href="https://codepen.io/AlexDeL"
                                 target="_blank"
                             >
                                 <img
-                                    className={styles.footerLinkImg}
+                                    className={footerStyles.footerLinkImg}
                                     src="/footer/codepen-icon.png"
                                 ></img>
                             </a>
                         </li>
-                        <li className={styles.footerLink}>
+                        <li className={footerStyles.footerLink}>
                             <a href="mailto:alexnaj88@gmail.com">
                                 <img
-                                    className={styles.footerLinkImg}
+                                    className={footerStyles.footerLinkImg}
                                     src="/footer/email-icon.png"
                                 ></img>
                             </a>
