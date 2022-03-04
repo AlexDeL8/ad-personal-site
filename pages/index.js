@@ -54,19 +54,30 @@ export default function Home() {
             </header>
 
             <main className={mainStyles.main}>
-                <img
-                    className={mainStyles.profilePic}
-                    alt="Alex De Luca profile picture"
-                    src={ProfilePicture.src}
-                ></img>
+                <section className={mainStyles.section} id={mainStyles.mainSection}>
+                    <img
+                        className={mainStyles.profilePic}
+                        alt="Alex De Luca profile picture"
+                        src={ProfilePicture.src}
+                    ></img>
 
-                <p className={mainStyles.description}>
-                    Alex De Luca
-                    <p>(he/him)</p>
-                    <code className={mainStyles.code}>
-                        Software Engineer - &#123;Frontend Focused&#125;
-                    </code>
-                </p>
+                    <p className={mainStyles.description}>
+                        Alex De Luca
+                        <p>(he/him)</p>
+                        <code className={mainStyles.code}>
+                            Software Engineer - &#123;Frontend Focused&#125;
+                        </code>
+                    </p>
+                </section>
+                <section className={mainStyles.section} id={mainStyles.aboutSection}>
+                    <p>About</p>
+                </section>
+                <section className={mainStyles.section} id={mainStyles.resumeSection}>
+                    <p>Resume</p>
+                </section>
+                <section className={mainStyles.section} id={mainStyles.workSection}>
+                    <p>Work</p>
+                </section>
             </main>
 
             <footer className={footerStyles.footer}>
