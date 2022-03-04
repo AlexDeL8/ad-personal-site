@@ -41,13 +41,13 @@ export default function Home() {
                             <a href="#header">Home</a>
                         </li>
                         <li className={headerStyles.headerLink}>
-                            <a href="#about">About</a>
+                            <a href="#aboutSection">About</a>
                         </li>
                         <li className={headerStyles.headerLink}>
-                            <a href="#resume">Resume</a>
+                            <a href="#resumeSection">Resume</a>
                         </li>
                         <li className={headerStyles.headerLink}>
-                            <a href="#work">Work</a>
+                            <a href="#workSection">Work</a>
                         </li>
                     </ul>
                 </nav>
