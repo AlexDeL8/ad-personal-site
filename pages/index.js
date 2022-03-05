@@ -1,15 +1,15 @@
 import Head from "next/head";
 
-import SiteLogo from "/public/personal-site-logo.png"
-import SiteLogoTp from "/public/personal-site-logo-tp.ico"
+import SiteLogo from "/public/personal-site-logo.png";
+import SiteLogoTp from "/public/personal-site-logo-tp.ico";
 
-import ProfilePicture from "/public/main/ad-profile.jpg"
+import ProfilePicture from "/public/main/ad-profile.jpg";
 
-import LinkedInIcon from "/public/footer/linkedin-icon.png"
-import GithubIcon from "/public/footer/github-icon.png"
-import SandboxIcon from "/public/footer/codesandbox-icon.png"
-import CodepenIcon from "/public/footer/codepen-icon.png"
-import EmailIcon from "/public/footer/email-icon.png"
+import LinkedInIcon from "/public/footer/linkedin-icon.png";
+import GithubIcon from "/public/footer/github-icon.png";
+import SandboxIcon from "/public/footer/codesandbox-icon.png";
+import CodepenIcon from "/public/footer/codepen-icon.png";
+import EmailIcon from "/public/footer/email-icon.png";
 
 import mainStyles from "../styles/Home.module.sass";
 import headerStyles from "../styles/Header.module.sass";
@@ -26,7 +26,7 @@ export default function Home() {
                 />
                 <link rel="icon" href={SiteLogoTp.src} />
             </Head>
-
+            {/* Maybe need to break up header - main/sections - footer in components? */}
             <header className={headerStyles.header} id="header">
                 <nav className={headerStyles.headerNav}>
                     <a href="#header">
@@ -54,7 +54,10 @@ export default function Home() {
             </header>
 
             <main className={mainStyles.main}>
-                <section className={mainStyles.section} id={mainStyles.mainSection}>
+                <section
+                    className={mainStyles.section}
+                    id={mainStyles.mainSection}
+                >
                     <img
                         className={mainStyles.profilePic}
                         alt="Alex De Luca profile picture"
@@ -69,19 +72,29 @@ export default function Home() {
                         </code>
                     </p>
                 </section>
-                <section className={mainStyles.section} id={mainStyles.aboutSection}>
+                <section
+                    className={mainStyles.section}
+                    id={mainStyles.aboutSection}
+                >
                     <p>About</p>
                 </section>
-                <section className={mainStyles.section} id={mainStyles.resumeSection}>
+                <section
+                    className={mainStyles.section}
+                    id={mainStyles.resumeSection}
+                >
                     <p>Resume</p>
                 </section>
-                <section className={mainStyles.section} id={mainStyles.workSection}>
+                <section
+                    className={mainStyles.section}
+                    id={mainStyles.workSection}
+                >
                     <p>Work</p>
                 </section>
             </main>
 
             <footer className={footerStyles.footer}>
                 <nav className={footerStyles.footerNav}>
+                    <p id={footerStyles.footerLabel}>Connect with me via:</p>
                     <ul className={footerStyles.footerLinks}>
                         <li className={footerStyles.footerLink}>
                             <a

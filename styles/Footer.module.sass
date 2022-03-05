@@ -1,5 +1,5 @@
 .footer
-    position: fixed
+    // position: fixed
     display: flex
     flex: 1
     padding: 1rem 0
@@ -7,22 +7,22 @@
     justify-content: center
     align-items: center
 
+    #footerLabel
+        text-align: center
+        font-size: 1.25rem
 
-.footerLinks 
-    display: flex
-    flex-direction: row
-    column-gap: 10px
-    list-style: none
+    .footerLinks
+        display: flex
+        flex-direction: row
+        column-gap: 10px
+        padding-left: 0px
+        list-style: none
 
+    .footerLink > a:hover
+        border-bottom: 3px solid green
 
-.footerLink > a:hover 
-    border-bottom: 3px solid green
+    .footerLinkImg
+        height: 40px
+        width: 40px
 
-
-.footerLinkImg 
-    height: 40px
-    width: 40px
-
-    
-@media (max-width: 600px) 
-
+@media (max-width: 600px)
