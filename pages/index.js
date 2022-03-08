@@ -1,21 +1,29 @@
 import Head from "next/head";
+import { useEffect } from "react";
 
 import SiteLogo from "/public/personal-site-logo.png";
 import SiteLogoTp from "/public/personal-site-logo-tp.ico";
 
 import ProfilePicture from "/public/main/ad-profile.jpg";
 
-import LinkedInIcon from "/public/footer/linkedin-icon.png";
-import GithubIcon from "/public/footer/github-icon.png";
-import SandboxIcon from "/public/footer/codesandbox-icon.png";
-import CodepenIcon from "/public/footer/codepen-icon.png";
-import EmailIcon from "/public/footer/email-icon.png";
+import LinkedInIcon from "/public/footer/linkedin-icon-white.png";
+import GithubIcon from "/public/footer/github-icon-white.png";
+import SandboxIcon from "/public/footer/codesandbox-icon-white.png";
+import CodepenIcon from "/public/footer/codepen-icon-white.png";
+import EmailIcon from "/public/footer/email-icon-white.png";
 
 import mainStyles from "../styles/Home.module.sass";
 import headerStyles from "../styles/Header.module.sass";
 import footerStyles from "../styles/Footer.module.sass";
 
 export default function Home() {
+    useEffect(() => {
+        const parallaxScrolling1 = document.getElementById("mainSection");
+        const parallaxScrolling2 = document.getElementById("resumeSection");
+        console.log(parallaxScrolling1);
+        console.log(parallaxScrolling2);
+    }, []);
+
     return (
         <div className={mainStyles.container}>
             <Head>
@@ -26,7 +34,7 @@ export default function Home() {
                 />
                 <link rel="icon" href={SiteLogoTp.src} />
             </Head>
-            {/* Maybe need to break up header - main/sections - footer in components? */}
+
             <header className={headerStyles.header} id="header">
                 <nav className={headerStyles.headerNav}>
                     <a href="#header">
@@ -64,13 +72,13 @@ export default function Home() {
                         src={ProfilePicture.src}
                     ></img>
 
-                    <p className={mainStyles.description}>
+                    <h1 className={mainStyles.description}>
                         Alex De Luca
                         <p>(he/him)</p>
                         <code className={mainStyles.code}>
                             Software Engineer - &#123;Frontend Focused&#125;
                         </code>
-                    </p>
+                    </h1>
                 </section>
                 <section
                     className={mainStyles.section}
