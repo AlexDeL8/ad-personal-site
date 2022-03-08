@@ -1,51 +1,48 @@
 .container
     // padding: 0 2rem
-    background-image: url("../public/main/city-desk.jpg")
-    background-size: cover
+    background-image: url("../public/main/wood-desk-bw.jpg")
+    background-size: 125%
+    background-repeat: no-repeat
+    background-attachment: fixed
     box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.73)
     color: green
 
 .main
-    // max-height: 80vh
-    padding: 4rem 0
+    padding: 4rem 0 0 0
     flex: 1
     display: flex
     flex-direction: column
     justify-content: center
     align-items: center
-    // overflow-y: scroll
-
-    .section
-        border-top: 3px solid white
-        min-height: 100vh
 
     #mainSection
+        min-height: 90vh
         display: flex
         flex-direction: column
         justify-content: center
         align-items: center
-        padding-bottom: 15rem
+        padding-bottom: 10rem
 
         .profilePic
-            width: 200px
-            height: 200px
+            width: 250px
+            height: 250px
             border-radius: 50%
             border: 5px solid rgba(255, 255, 255, 0.8)
 
         .description
             color: black
             background: rgba(255, 255, 255, 0.8)
-            font-size: 50px
             border-radius: 10px
             text-align: center
             line-height: 1.5
             font-size: 1.75rem
+            font-weight: normal
 
         .description > p
             margin: 0px
             margin-top: -10px
             color: grey
-            font-size: 14px
+            font-size: 1rem
 
         .code
             color: green
@@ -53,5 +50,24 @@
             padding: 0.75rem
             font-size: 1.1rem
             font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace
+
+    .aboutSection
+        min-height: 75vh
+        width: 100%
+        background-color: #bdbdbd
+
+    .resumeSection
+        min-height: 75vh
+        width: 100%
+        background-image: url("../public/main/react-banner.png")
+        background-size: 125% 100%
+        background-repeat: no-repeat
+        background-attachment: fixed
+
+    .workSection
+        min-height: 75vh
+        width: 100%
+        height: 100%
+        background-color: black
 
 @media (max-width: 600px)
