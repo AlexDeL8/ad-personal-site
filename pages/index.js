@@ -18,14 +18,21 @@ import footerStyles from "../styles/Footer.module.sass";
 
 export default function Home() {
     useEffect(() => {
-        const parallaxScrolling1 = document.getElementById("mainSection");
+        const parallaxScrolling1 = document.getElementById("container");
         const parallaxScrolling2 = document.getElementById("resumeSection");
         console.log(parallaxScrolling1);
         console.log(parallaxScrolling2);
+
+        window.addEventListener("scroll", () => {
+            let offset = window.scrollY;
+
+            parallaxScrolling1.style.backgroundPositionY = `${offset * 0.1}px`;
+            parallaxScrolling2.style.backgroundPositionY = `${offset * 0.1}px`;
+        });
     }, []);
 
     return (
-        <div className={mainStyles.container}>
+        <div className={mainStyles.container} id="container">
             <Head>
                 <title>Alex De Luca</title>
                 <meta
@@ -80,22 +87,16 @@ export default function Home() {
                         </code>
                     </h1>
                 </section>
-                <section
-                    className={mainStyles.section}
-                    id={mainStyles.aboutSection}
-                >
+                <section className={mainStyles.aboutSection} id="aboutSection">
                     <p>About</p>
                 </section>
                 <section
-                    className={mainStyles.section}
-                    id={mainStyles.resumeSection}
+                    className={mainStyles.resumeSection}
+                    id="resumeSection"
                 >
                     <p>Resume</p>
                 </section>
-                <section
-                    className={mainStyles.section}
-                    id={mainStyles.workSection}
-                >
+                <section className={mainStyles.workSection} id="workSection">
                     <p>Work</p>
                 </section>
             </main>
