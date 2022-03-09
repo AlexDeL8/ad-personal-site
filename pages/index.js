@@ -6,6 +6,8 @@ import SiteLogoTp from "/public/personal-site-logo-tp.ico";
 
 import ProfilePicture from "/public/main/ad-profile.jpg";
 
+import AdResumePreview from "/public/main/ad-resume-preview.png";
+
 import LinkedInIcon from "/public/footer/linkedin-icon-white.png";
 import GithubIcon from "/public/footer/github-icon-white.png";
 import SandboxIcon from "/public/footer/codesandbox-icon-white.png";
@@ -20,8 +22,6 @@ export default function Home() {
     useEffect(() => {
         const parallaxScrolling1 = document.getElementById("container");
         const parallaxScrolling2 = document.getElementById("resumeSection");
-        console.log(parallaxScrolling1);
-        console.log(parallaxScrolling2);
 
         window.addEventListener("scroll", () => {
             let offset = window.scrollY;
@@ -144,7 +144,24 @@ export default function Home() {
                     className={mainStyles.resumeSection}
                     id="resumeSection"
                 >
-                    <h2 className={mainStyles.sectionTitle}>Resume</h2>
+                    <h2
+                        className={mainStyles.sectionTitle}
+                        id={mainStyles.resumeSectionTitle}
+                    >
+                        Resume
+                    </h2>
+                    <a
+                        href="https://drive.google.com/file/d/1HlQKoaMWIpjxq0qWm2Tyz5AsbT0bNOnX/view?usp=sharing"
+                        target="_blank"
+                    >
+                        <img
+                            className={mainStyles.resumePreview}
+                            src={AdResumePreview.src}
+                        />
+                    </a>
+                    <p className={mainStyles.resumeNote}>
+                        (Click above to view and download)
+                    </p>
                 </section>
                 <section className={mainStyles.workSection} id="workSection">
                     <h2 className={mainStyles.sectionTitle}>Work</h2>
