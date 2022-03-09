@@ -165,6 +165,14 @@ export default function Home() {
                 </section>
                 <section className={mainStyles.workSection} id="workSection">
                     <h2 className={mainStyles.sectionTitle}>Work</h2>
+                    <ul className={mainStyles.workList}>
+                        <li className={mainStyles.workItem}>Project 1</li>
+                        <li className={mainStyles.workItem}>Project 2</li>
+                    </ul>
+                    <ul className={mainStyles.workList}>
+                        <li className={mainStyles.workItem}>Article 1</li>
+                        <li className={mainStyles.workItem}>Article 2</li>
+                    </ul>
                 </section>
             </main>
 
