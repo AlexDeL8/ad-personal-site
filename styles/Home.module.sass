@@ -114,6 +114,9 @@
         align-items: center
         padding: 1rem
 
+        .workListLabel
+            font-size: 1.75rem
+
         .workList
             list-style: none
             padding: 0px
@@ -123,7 +126,36 @@
             flex-wrap: wrap
             justify-content: center
             align-items: center
-            column-gap: 30px
+            column-gap: 75px
 
-// Need to have responsive text changes
+            .workItem
+                border: 2px solid white
+                color: white
+
+            .workItemImg
+                width: 325px
+                height: 225px
+
+            .workItemInfo
+                border: 1px solid green
+                padding: 0.5rem
+                display: flex
+                flex-direction: column
+
+                p
+                    margin: 0.5rem 0
+
+                .workItemTitle
+                    font-size: 1.5rem
+                    text-decoration: underline
+
+                .workItemDescription
+
+                a
+                    align-self: center
+
+                    .workItemGit
+                        width: 30px
+                        height: 30px
+
 @media (max-width: 600px)
