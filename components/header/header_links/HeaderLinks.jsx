@@ -7,10 +7,11 @@ const HeaderLinks = (props) => {
     return (
         <>
             <ul className={headerStyles.headerLinks}>
-                {props.headerLinksArr.map((headerLinkObj) => (
+                {props.headerLinksArr.map((headerLinkObj, index) => (
                     <HeaderLink
                         linkHref={headerLinkObj.linkHref}
                         linkText={headerLinkObj.linkText}
+                        key={index}
                     />
                 ))}
             </ul>

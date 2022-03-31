@@ -3,11 +3,9 @@ import headerStyles from "../../../styles/Header.module.sass";
 
 const HeaderLink = (props) => {
     return (
-        <>
-            <li className={headerStyles.headerLink}>
-                <a href={props.linkHref}>{props.linkText}</a>
-            </li>
-        </>
+        <li className={headerStyles.headerLink}>
+            <a href={props.linkHref}>{props.linkText}</a>
+        </li>
     );
 };
 

@@ -2,6 +2,7 @@ import Head from "next/head";
 import { useEffect } from "react";
 
 import Header from "../components/header/Header.jsx";
+import Footer from "../components/footer/Footer.jsx";
 
 import SiteLogoTp from "/public/personal-site-logo-tp.ico";
 
@@ -9,14 +10,9 @@ import ProfilePicture from "/public/main/ad-profile.jpg";
 import AdResumePreview from "/public/main/ad-resume-preview.png";
 import ReactLogo from "/public/main/react-icon.png";
 
-import LinkedInIcon from "/public/footer/linkedin-icon-white.png";
 import GithubIcon from "/public/footer/github-icon-white.png";
-import SandboxIcon from "/public/footer/codesandbox-icon-white.png";
-import CodepenIcon from "/public/footer/codepen-icon-white.png";
-import EmailIcon from "/public/footer/email-icon-white.png";
 
 import mainStyles from "../styles/Home.module.sass";
-import footerStyles from "../styles/Footer.module.sass";
 
 export default function Home() {
     useEffect(() => {
@@ -229,64 +225,7 @@ export default function Home() {
                 </section>
             </main>
 
-            <footer className={footerStyles.footer} id="footer">
-                <nav className={footerStyles.footerNav}>
-                    <ul className={footerStyles.footerLinks}>
-                        <li className={footerStyles.footerLink}>
-                            <a
-                                href="https://www.linkedin.com/in/alex-de-luca/"
-                                target="_blank"
-                            >
-                                <img
-                                    className={footerStyles.footerLinkImg}
-                                    src={LinkedInIcon.src}
-                                ></img>
-                            </a>
-                        </li>
-                        <li className={footerStyles.footerLink}>
-                            <a
-                                href="https://github.com/AlexDeL8"
-                                target="_blank"
-                            >
-                                <img
-                                    className={footerStyles.footerLinkImg}
-                                    src={GithubIcon.src}
-                                ></img>
-                            </a>
-                        </li>
-                        <li className={footerStyles.footerLink}>
-                            <a
-                                href="https://codesandbox.io/u/alexdel"
-                                target="_blank"
-                            >
-                                <img
-                                    className={footerStyles.footerLinkImg}
-                                    src={SandboxIcon.src}
-                                ></img>
-                            </a>
-                        </li>
-                        <li className={footerStyles.footerLink}>
-                            <a
-                                href="https://codepen.io/AlexDeL"
-                                target="_blank"
-                            >
-                                <img
-                                    className={footerStyles.footerLinkImg}
-                                    src={CodepenIcon.src}
-                                ></img>
-                            </a>
-                        </li>
-                        <li className={footerStyles.footerLink}>
-                            <a href="mailto:alexnaj88@gmail.com">
-                                <img
-                                    className={footerStyles.footerLinkImg}
-                                    src={EmailIcon.src}
-                                ></img>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-            </footer>
+            <Footer />
         </div>
     );
 }
