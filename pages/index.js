@@ -16,7 +16,6 @@ import CodepenIcon from "/public/footer/codepen-icon-white.png";
 import EmailIcon from "/public/footer/email-icon-white.png";
 
 import mainStyles from "../styles/Home.module.sass";
-import headerStyles from "../styles/Header.module.sass";
 import footerStyles from "../styles/Footer.module.sass";
 
 export default function Home() {
