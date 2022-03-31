@@ -256,9 +256,6 @@ export default function Home() {
 
             <footer className={footerStyles.footer} id="footer">
                 <nav className={footerStyles.footerNav}>
-                    <p className={footerStyles.footerLabel}>
-                        Connect with me via:
-                    </p>
                     <ul className={footerStyles.footerLinks}>
                         <li className={footerStyles.footerLink}>
                             <a
