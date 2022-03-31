@@ -1,5 +1,5 @@
 import React from "react";
-import headerStyles from "../styles/Header.module.sass";
+import headerStyles from "../../../styles/Header.module.sass";
 
 const HeaderLink = (props) => {
     return (

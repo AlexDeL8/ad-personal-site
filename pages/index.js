@@ -1,7 +1,8 @@
 import Head from "next/head";
 import { useEffect } from "react";
 
-import SiteLogo from "/public/personal-site-logo.png";
+import Header from "../components/header/header.jsx";
+
 import SiteLogoTp from "/public/personal-site-logo-tp.ico";
 
 import ProfilePicture from "/public/main/ad-profile.jpg";
@@ -50,32 +51,7 @@ export default function Home() {
                 />
                 <link rel="icon" href={SiteLogoTp.src} />
             </Head>
-
-            <header className={headerStyles.header} id="header">
-                <nav className={headerStyles.headerNav}>
-                    <a href="#header">
-                        <img
-                            className={headerStyles.adLogo}
-                            alt="Alex De Luca logo"
-                            src={SiteLogo.src}
-                        ></img>
-                    </a>
-                    <ul className={headerStyles.headerLinks}>
-                        <li className={headerStyles.headerLink}>
-                            <a href="#aboutSection">About</a>
-                        </li>
-                        <li className={headerStyles.headerLink}>
-                            <a href="#resumeSection">Resume</a>
-                        </li>
-                        <li className={headerStyles.headerLink}>
-                            <a href="#workSection">Work</a>
-                        </li>
-                        <li className={headerStyles.headerLink}>
-                            <a href="#footer">Connect</a>
-                        </li>
-                    </ul>
-                </nav>
-            </header>
+            <Header />
 
             <main className={mainStyles.main}>
                 <section

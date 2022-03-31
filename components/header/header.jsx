@@ -1,5 +1,6 @@
 import React from "react";
-import headerStyles from "../styles/Header.module.sass";
+import headerStyles from "../../styles/Header.module.sass";
+import SiteLogo from "/public/personal-site-logo.png";
 
 import HeaderLinks from "./header_links/header_links.jsx";
 
