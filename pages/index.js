@@ -1,7 +1,7 @@
 import Head from "next/head";
 import { useEffect } from "react";
 
-import Header from "../components/header/header.jsx";
+import Header from "../components/header/Header.jsx";
 
 import SiteLogoTp from "/public/personal-site-logo-tp.ico";
 
