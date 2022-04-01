@@ -20,30 +20,31 @@ const Footer = () => {
                                 footerLink:
                                     "https://www.linkedin.com/in/alex-de-luca/",
                                 footerLinkTarget: "_blank",
-                                footerLinkImg: LinkedInIcon,
+                                footerLinkImg: LinkedInIcon.src,
                             },
                             {
                                 footerLink: "https://github.com/AlexDeL8",
                                 footerLinkTarget: "_blank",
-                                footerLinkImg: GithubIcon,
+                                footerLinkImg: GithubIcon.src,
                             },
                             {
                                 footerLink: "https://codesandbox.io/u/alexdel",
                                 footerLinkTarget: "_blank",
-                                footerLinkImg: SandboxIcon,
+                                footerLinkImg: SandboxIcon.src,
                             },
                             {
                                 footerLink: "https://codepen.io/AlexDeL",
                                 footerLinkTarget: "_blank",
-                                footerLinkImg: CodepenIcon,
+                                footerLinkImg: CodepenIcon.src,
                             },
                             {
                                 footerLink: "mailto:alexnaj88@gmail.com",
                                 footerLinkTarget: "",
-                                footerLinkImg: EmailIcon,
+                                footerLinkImg: EmailIcon.src,
                             },
                         ]}
                     />
+                    <p>Copyright &copy; 2022 Alex De Luca</p>
                 </nav>
             </footer>
         </>

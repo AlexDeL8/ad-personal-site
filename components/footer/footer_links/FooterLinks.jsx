@@ -7,14 +7,14 @@ const FooterLinks = (props) => {
     return (
         <>
             <ul className={footerStyles.footerLinks}>
-                {props.footerLinksArr.map((footerLinkObj, index) => {
+                {props.footerLinksArr.map((footerLinkObj, index) => (
                     <FooterLink
                         footerLink={footerLinkObj.footerLink}
                         footerLinkTarget={footerLinkObj.footerLinkTarget}
                         footerLinkImg={footerLinkObj.footerLinkImg}
                         key={index}
-                    />;
-                })}
+                    />
+                ))}
             </ul>
         </>
     );
