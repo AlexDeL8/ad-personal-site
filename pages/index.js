@@ -1,6 +1,5 @@
 import Head from "next/head";
 import { useEffect } from "react";
-
 import mainStyles from "../styles/Home.module.sass";
 import SiteLogoTp from "/public/personal-site-logo-tp.ico";
 

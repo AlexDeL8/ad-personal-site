@@ -2,7 +2,7 @@ import React from "react";
 import mainStyles from "../../../styles/Home.module.sass";
 import ProfilePicture from "/public/main/ad-profile.jpg";
 
-const MainSection = (props) => {
+const MainSection = () => {
     return (
         <section className={mainStyles.section} id={mainStyles.mainSection}>
             <img

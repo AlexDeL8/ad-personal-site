@@ -8,13 +8,11 @@ import WorkSection from "./sections/WorkSection.jsx";
 
 const MainContent = () => {
     return (
-        // Possible props:
-        // Section title -
         <main className={mainStyles.main}>
             <MainSection />
-            <AboutSection />
-            <ResumeSection />
-            <WorkSection />
+            <AboutSection title="About" />
+            <ResumeSection title="Resume" />
+            <WorkSection title="Work" />
         </main>
     );
 };

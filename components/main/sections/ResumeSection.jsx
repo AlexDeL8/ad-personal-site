@@ -9,7 +9,7 @@ const ResumeSection = (props) => {
                 className={mainStyles.sectionTitle}
                 id={mainStyles.resumeSectionTitle}
             >
-                Resume
+                {props.title}
             </h2>
             <a
                 href="https://drive.google.com/file/d/1HlQKoaMWIpjxq0qWm2Tyz5AsbT0bNOnX/view?usp=sharing"

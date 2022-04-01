@@ -43,7 +43,7 @@ const Footer = () => {
                         },
                     ]}
                 />
-                <p>Copyright &copy; 2022 Alex De Luca</p>
+                <p>Copyright &copy; 2022 - Alex De Luca</p>
             </nav>
         </footer>
     );
