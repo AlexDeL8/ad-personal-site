@@ -8,7 +8,7 @@ const Header = () => {
     return (
         <header className={headerStyles.header} id="header">
             <nav className={headerStyles.headerNav}>
-                <a href="#header">
+                <a href="#">
                     <img
                         className={headerStyles.adLogo}
                         alt="Alex De Luca logo"
