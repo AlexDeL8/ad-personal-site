@@ -55,12 +55,16 @@ const HeaderLinks = (props) => {
             }
         }
     }
+
     return (
         <ul className={headerStyles.headerLinks}>
-            <li>
+            <li
+                className={headerStyles.headerLink}
+                id={headerStyles.adLogoItem}
+            >
                 <a href="#" className={headerStyles.adLogoLink}>
                     <img
-                        className={headerStyles.adHeaderLogo}
+                        className={headerStyles.active}
                         id={headerStyles.adLogoImg}
                         alt="Alex De Luca logo"
                         src={SiteLogo.src}

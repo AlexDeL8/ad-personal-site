@@ -4,12 +4,19 @@
 .headerLinks
     display: flex
     flex-direction: row
+    align-items: center
     column-gap: 25px
     margin-top: 0px
     margin-left: 15px
     padding-top: 20px
     padding-left: 0px
     list-style: none
+
+#adLogoItem
+    margin-bottom: 2px
+
+#adLogoItem:hover
+    border-bottom: none
 
 #adLogoImg
     width: 60px
@@ -19,17 +26,18 @@
 #adLogoImg.active
     border: 3px solid green
 
-.active
-    border-bottom: 2px solid green
-
 .headerLink
     color: white
     font-size: 1.5rem
-    margin-bottom: 2px
+    margin-bottom: 10px
+
+.headerLink.active
+    margin-bottom: 8px
+    border-bottom: 2px solid green
 
 .headerLink:hover
     cursor: pointer
-    margin-bottom: 0px
+    margin-bottom: 8px
     border-bottom: 2px solid green
 
 @media (max-width: 600px)
