@@ -1,4 +1,4 @@
-import React from "react";
+import { React, useEffect } from "react";
 import mainStyles from "../../styles/Home.module.sass";
 
 import MainSection from "./sections/MainSection.jsx";
