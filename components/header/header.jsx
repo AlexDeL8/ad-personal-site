@@ -1,6 +1,5 @@
-import React from "react";
+import { React } from "react";
 import headerStyles from "../../styles/Header.module.sass";
-import SiteLogo from "/public/personal-site-logo.png";
 
 import HeaderLinks from "./header_links/HeaderLinks.jsx";
 
@@ -8,13 +7,6 @@ const Header = () => {
     return (
         <header className={headerStyles.header} id="header">
             <nav className={headerStyles.headerNav}>
-                <a href="#header">
-                    <img
-                        className={headerStyles.adLogo}
-                        alt="Alex De Luca logo"
-                        src={SiteLogo.src}
-                    ></img>
-                </a>
                 <HeaderLinks
                     headerLinksArr={[
                         { linkHref: "#aboutSection", linkText: "About" },
