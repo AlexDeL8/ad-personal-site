@@ -9,6 +9,7 @@ const HeaderLinks = (props) => {
     useEffect(() => {
         window.addEventListener("scroll", () => {
             let activeSectionId = setActiveNavLink();
+            console.log(activeSectionId);
             let activeNavId =
                 activeSectionId === "Home_mainSection__GshWc"
                     ? (activeNavId = headerStyles.adLogoImg)
