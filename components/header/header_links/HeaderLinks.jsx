@@ -1,5 +1,6 @@
 import { React, useEffect } from "react";
 import headerStyles from "../../../styles/Header.module.sass";
+import mainStyles from "../../../styles/Home.module.sass";
 import SiteLogo from "/public/personal-site-logo.png";
 
 import HeaderLink from "./HeaderLink.jsx";
@@ -56,13 +57,17 @@ const HeaderLinks = (props) => {
         }
     }
 
+    const internalMainSecionHref = `#${mainStyles.mainSection}`;
     return (
         <ul className={headerStyles.headerLinks}>
             <li
                 className={headerStyles.headerLink}
                 id={headerStyles.adLogoItem}
             >
-                <a href="#" className={headerStyles.adLogoLink}>
+                <a
+                    href={internalMainSecionHref}
+                    className={headerStyles.adLogoLink}
+                >
                     <img
                         className={headerStyles.active}
                         id={headerStyles.adLogoImg}

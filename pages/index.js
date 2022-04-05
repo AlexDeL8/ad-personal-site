@@ -8,18 +8,6 @@ import MainContent from "../components/main/MainContent.jsx";
 import Footer from "../components/footer/Footer.jsx";
 
 export default function Home() {
-    useEffect(() => {
-        const parallaxScrolling1 = document.getElementById("container");
-        const parallaxScrolling2 = document.getElementById("resumeSection");
-
-        window.addEventListener("scroll", () => {
-            let offset = window.scrollY;
-
-            parallaxScrolling1.style.backgroundPositionY = `${offset * 0.1}px`;
-            parallaxScrolling2.style.backgroundPositionY = `${offset * 0.1}px`;
-        });
-    }, []);
-
     return (
         <div className={mainStyles.container} id="container">
             <Head>
