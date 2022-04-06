@@ -18,13 +18,82 @@
 #adLogoItem:hover
     border-bottom: none
 
+@keyframes logoArrowsFadeIn
+    0%
+        display: block
+        opacity: 0%
+        transform: translateY(-100%)
+
+    100%
+        opacity: 100%
+        transform: translateY(0%)
+
+@keyframes logoTextFadeOut
+    0%
+        opacity: 100%
+        transform: translateY(0%)
+
+    100%
+        opacity: 0%
+        transform: translateY(200%)
+
+@keyframes logoTextFadeIn
+    0%
+        display: block
+        opacity: 0%
+        transform: translateY(200%)
+
+    100%
+        opacity: 100%
+        transform: translateY(0%)
+
+@keyframes logoArrowsFadeOut
+    0%
+        opacity: 100%
+        transform: translateY(0%)
+
+    100%
+        opacity: 0%
+        transform: translateY(-100%)
+        display: none
+
 #adLogoImg
     width: 60px
     height: 60px
     border-radius: 50%
 
+    #logoText
+        animation-duration: 1s
+        animation-name: logoTextFadeOut
+        transform: translateY(200%)
+
+    #topArrow1
+        animation-duration: 1s
+        animation-name: logoArrowsFadeIn
+        transform: translateY(0%)
+
+    #topArrow2
+        animation-duration: 1s
+        animation-name: logoArrowsFadeIn
+        transform: translateY(0%)
+
 #adLogoImg.active
     border: 3px solid green
+
+    #logoText
+        animation-duration: 1s
+        animation-name: logoTextFadeIn
+        transform: translateY(0%)
+
+    #topArrow1
+        animation-duration: 1s
+        animation-name: logoArrowsFadeOut
+        transform: translateY(-100%)
+
+    #topArrow2
+        animation-duration: 1s
+        animation-name: logoArrowsFadeOut
+        transform: translateY(-100%)
 
 .headerLink
     color: white
