@@ -1,6 +1,6 @@
 import React from "react";
 import mainStyles from "../../../../styles/Home.module.sass";
-import GithubIcon from "/public/footer/github-icon-white.png";
+import GithubIcon from "/public/connect/github-icon-white.png";
 
 const WorkItem = (props) => {
     return (
