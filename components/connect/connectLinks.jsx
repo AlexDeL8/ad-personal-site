@@ -8,7 +8,7 @@ import CodepenIcon from "/public/connect/codepen-icon-white.png";
 import EmailIcon from "/public/connect/email-icon-white.png";
 
 import ConnectLink from "./connectLink.jsx";
-//comment
+
 const ConnectLinks = (props) => {
     const connectLinksArr = [
         {
@@ -42,6 +42,7 @@ const ConnectLinks = (props) => {
         <ul
             className={connectStyles.connectLinks}
             style={props.listFlexDirection}
+            id={props.listId}
         >
             {connectLinksArr.map((connectLinkObj, index) => (
                 <ConnectLink

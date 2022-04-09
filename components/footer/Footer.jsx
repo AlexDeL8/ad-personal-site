@@ -7,7 +7,10 @@ const Footer = () => {
     return (
         <footer className={footerStyles.footer} id="footer">
             <nav className={footerStyles.footerNav}>
-                <ConnectLinks listFlexDirection={{ flexDirection: "row" }} />
+                <ConnectLinks
+                    listFlexDirection={{ flexDirection: "row" }}
+                    listId="footerConnect"
+                />
                 <p>Copyright &copy; 2022 - Alex De Luca</p>
             </nav>
         </footer>

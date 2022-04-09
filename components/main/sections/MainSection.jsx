@@ -2,6 +2,8 @@ import React from "react";
 import mainStyles from "../../../styles/Home.module.sass";
 import ProfilePicture from "/public/main/ad-profile.jpg";
 
+import ConnectLinks from "../../connect/connectLinks.jsx";
+
 const MainSection = () => {
     return (
         <section className={mainStyles.section} id={mainStyles.mainSection}>
@@ -18,6 +20,10 @@ const MainSection = () => {
                     Software Engineer - &#123;Frontend Focused&#125;
                 </code>
             </h1>
+            <ConnectLinks
+                listFlexDirection={{ flexDirection: "row" }}
+                listId="mainConnect"
+            />
         </section>
     );
 };

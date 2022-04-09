@@ -12,7 +12,6 @@ const Header = () => {
                         { linkHref: "#aboutSection", linkText: "About" },
                         { linkHref: "#resumeSection", linkText: "Resume" },
                         { linkHref: "#workSection", linkText: "Work" },
-                        { linkHref: "#footer", linkText: "Connect" },
                     ]}
                 />
             </nav>
