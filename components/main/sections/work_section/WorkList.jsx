@@ -4,6 +4,7 @@ import mainStyles from "../../../../styles/Home.module.sass";
 import WorkItem from "./WorkItem.jsx";
 
 const WorkList = (props) => {
+
     return (
         <>
             <p className={mainStyles.workListLabel}>{props.workListTitle}</p>

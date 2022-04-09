@@ -1,6 +1,9 @@
 import React from "react";
 import mainStyles from "../../../styles/Home.module.sass";
-import ReactLogo from "/public/main/react-icon.png";
+// import ReactLogo from "/public/main/react-icon.png";
+import TenBotImg from "/public/work/twitchBotBackground.jpg";
+import FactoryPatternArticleImg from "/public/work/Factory.jpg";
+import SingletonPatternArticleImg from "/public/work/Satellite.jpg";
 
 import WorkList from "./work_section/WorkList.jsx";
 
@@ -10,14 +13,9 @@ const WorkSection = (props) => {
             title: "Projects",
             items: [
                 {
-                    img: ReactLogo.src,
-                    title: "Project 1",
-                    description: "This is project 1",
-                },
-                {
-                    img: ReactLogo.src,
-                    title: "Project 2",
-                    description: "This is project 2",
+                    img: TenBotImg.src,
+                    title: "TENBot",
+                    description: "Twitch IRC bot for Xbox Live profile achievement stats live in chat",
                 },
             ],
         },
@@ -25,14 +23,14 @@ const WorkSection = (props) => {
             title: "Articles",
             items: [
                 {
-                    img: ReactLogo.src,
-                    title: "Article 1",
-                    description: "This is article 1",
+                    img: FactoryPatternArticleImg.src,
+                    title: "Efficient Object Creation with The Factory Design Pattern (in JavaScript)",
+                    description: "Medium blog post on the Factory Design Pattern influenced by Learning JavaScript Design Patterns by Addy Osmani",
                 },
                 {
-                    img: ReactLogo.src,
-                    title: "Article 2",
-                    description: "This is article 2",
+                    img: SingletonPatternArticleImg.src,
+                    title: "One-and-Done with The Singleton Pattern (in JavaScript)",
+                    description: "Medium blog post on the Singleton Pattern influenced by Learning JavaScript Design Patterns by Addy Osmani",
                 },
             ],
         },
