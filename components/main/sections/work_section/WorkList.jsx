@@ -10,6 +10,7 @@ const WorkList = (props) => {
             <ul className={mainStyles.workList}>
                 {props.workItems.map((item, index) => (
                     <WorkItem
+                        itemType={props.workListTitle}
                         itemImg={item.img}
                         itemTitle={item.title}
                         itemDesc={item.description}

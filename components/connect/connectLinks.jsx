@@ -5,6 +5,7 @@ import LinkedInIcon from "/public/connect/linkedin-icon-white.png";
 import GithubIcon from "/public/connect/github-icon-white.png";
 import SandboxIcon from "/public/connect/codesandbox-icon-white.png";
 import CodepenIcon from "/public/connect/codepen-icon-white.png";
+import MediumIcon from "/public/connect/medium-icon-white.png";
 import EmailIcon from "/public/connect/email-icon-white.png";
 
 import ConnectLink from "./connectLink.jsx";
@@ -30,6 +31,11 @@ const ConnectLinks = (props) => {
             connectLink: "https://codepen.io/AlexDeL",
             connectLinkTarget: "_blank",
             connectLinkImg: CodepenIcon.src,
+        },
+        {
+            connectLink: "https://medium.com/@alexdel",
+            connectLinkTarget: "_blank",
+            connectLinkImg: MediumIcon.src,
         },
         {
             connectLink: "mailto:alexnaj88@gmail.com",

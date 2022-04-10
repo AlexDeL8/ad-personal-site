@@ -17,8 +17,8 @@ const AboutSection = (props) => {
                 <p className={mainStyles.aboutContent}>
                     I view software development as a journey that allows you to
                     touch multiple areas of the industry while refining your
-                    core fundamentals as an engineer. My time in college I
-                    focused on web design and quickly moved into my first
+                    core fundamentals as an engineer. During my time in college,
+                    I focused on web design and quickly moved into my first
                     professional role utilizing said skills. After a
                     knowledgeable time in fin-tech (my latest role), I decided
                     to return to my original passion with my foot on the gas to
