@@ -11,7 +11,9 @@ const Footer = () => {
                     listFlexDirection={{ flexDirection: "row" }}
                     listId="footerConnect"
                 />
-                <p>Copyright &copy; 2022 - Alex De Luca</p>
+                <p>
+                    <strong>Copyright &copy; 2022 - Alex De Luca</strong>
+                </p>
             </nav>
         </footer>
     );

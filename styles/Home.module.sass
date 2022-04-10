@@ -106,6 +106,20 @@
             font-size: 0.85rem
             padding-bottom: 5rem
 
+    @keyframes workItemHoverIn
+        0%
+            box-shadow: 0px 5px 0px 1px #121212
+
+        100%
+            box-shadow: 8px 5px 0px 1px #3b3b3b
+
+    @keyframes workItemHoverOut
+        0%
+            box-shadow: 10px 5px 0px 1px #3b3b3b
+
+        100%
+            box-shadow: 0px 5px 0px 1px #121212
+
     .workSection
         height: auto
         width: 100%
@@ -118,11 +132,12 @@
 
         .workListLabel
             font-size: 1.75rem
+            margin: 1.33rem 0px
 
         .workList
             list-style: none
             padding: 0px
-            padding-bottom: 5rem
+            padding-bottom: 2rem
             display: flex
             flex-direction: row
             flex-wrap: wrap
@@ -131,11 +146,25 @@
             column-gap: 75px
 
             .workItem
+                width: 325px
                 color: white
+                border: 10px solid grey
+
+                border-radius: 15px
+
+            .workItem:hover
+                border: 10px solid grey
+                animation-duration: 0.3s
+                animation-timing-function: cubic-bezier(0,0,.5,1)
+                animation-name: workItemHoverIn
+                box-shadow: 8px 5px 0px 1px #3b3b3b
 
             .workItemImg
-                width: 325px
-                height: 225px
+                width: 100%
+                height: 200px
+                border-top-left-radius: 3px
+                border-top-right-radius: 3px
+                border-bottom: 1px solid white
 
             .workItemInfo
                 padding: 0.5rem
@@ -147,15 +176,18 @@
 
                 .workItemTitle
                     font-size: 1.5rem
-                    text-decoration: underline
+                    font-weight: bold
 
                 .workItemDescription
-
+                    font-size: 1rem
                 a
-                    align-self: center
+                    align-self: flex-end
 
-                    .workItemGit
+                    .workItemIcon
                         width: 30px
                         height: 30px
+
+                a:hover
+                    cursor: pointer
 
 @media (max-width: 600px)
