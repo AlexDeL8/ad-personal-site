@@ -11,7 +11,7 @@ const WorkItem = (props) => {
                 <p className={mainStyles.workItemDescription}>
                     {props.itemDesc}
                 </p>
-                <a href="#">
+                <a href={props.itemLink} target="_blank">
                     <img
                         className={mainStyles.workItemGit}
                         src={GithubIcon.src}
