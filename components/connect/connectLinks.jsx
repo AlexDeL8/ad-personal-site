@@ -8,7 +8,7 @@ import CodepenIcon from "/public/connect/codepen-icon-white.png";
 import MediumIcon from "/public/connect/medium-icon-white.png";
 import EmailIcon from "/public/connect/email-icon-white.png";
 
-import ConnectLink from "./connectLink.jsx";
+import ConnectLink from "./ConnectLink.jsx";
 
 const ConnectLinks = (props) => {
     const connectLinksArr = [

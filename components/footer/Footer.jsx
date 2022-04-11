@@ -1,7 +1,7 @@
 import React from "react";
 import footerStyles from "../../styles/Footer.module.sass";
 
-import ConnectLinks from "../connect/connectLinks.jsx";
+import ConnectLinks from "../connect/ConnectLinks.jsx";
 
 const Footer = () => {
     return (

@@ -2,7 +2,7 @@ import React from "react";
 import mainStyles from "../../../styles/Home.module.sass";
 import ProfilePicture from "/public/main/ad-profile.jpg";
 
-import ConnectLinks from "../../connect/connectLinks.jsx";
+import ConnectLinks from "../../connect/ConnectLinks.jsx";
 
 const MainSection = () => {
     return (
