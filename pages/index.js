@@ -3,7 +3,7 @@ import Head from "next/head";
 import mainStyles from "../styles/Home.module.sass";
 import SiteLogoTp from "/public/personal-site-logo-tp.ico";
 
-import Header from "../components/header/H1eader.jsx";
+import Header from "../components/header/Header.jsx";
 import MainContent from "../components/main/MainContent.jsx";
 import Footer from "../components/footer/Footer.jsx";
 
