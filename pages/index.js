@@ -1,5 +1,6 @@
-import { React, useEffect } from "react";
+import { React } from "react";
 import Head from "next/head";
+import Image from "next/image"
 import mainStyles from "../styles/Home.module.sass";
 import SiteLogoTp from "/public/personal-site-logo-tp.ico";
 
@@ -27,6 +28,15 @@ export default function Home() {
                 />
                 <link rel="icon" href={SiteLogoTp.src} />
             </Head>
+
+            <div className="backgroundImageContainer">
+                <Image
+                    src="/public/main/wood-desk-bw.jpg"
+                    layout="responsive"
+                    objectFit="cover"
+                    quality={100}
+                />
+            </div>
 
             <Header />
             <MainContent />
