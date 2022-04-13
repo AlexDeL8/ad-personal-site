@@ -4,7 +4,12 @@ import mainStyles from "../../../styles/Home.module.sass";
 const AboutSection = (props) => {
     return (
         <section className={mainStyles.aboutSection} id="aboutSection">
-            <h2 className={mainStyles.sectionTitle}>{props.title}</h2>
+            <h2
+                className={mainStyles.sectionTitle}
+                id={mainStyles.aboutSectionTitle}
+            >
+                {props.title}
+            </h2>
             <div className={mainStyles.aboutContentContainer}>
                 <p className={mainStyles.aboutContent}>
                     I'm a self-driven software engineer, experienced in
