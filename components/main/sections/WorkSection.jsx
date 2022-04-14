@@ -28,14 +28,14 @@ const WorkSection = (props) => {
                     img: FactoryPatternArticleImg.src,
                     title: "Efficient Object Creation with The Factory Design Pattern (in JavaScript)",
                     description:
-                        "Medium blog post on the Factory Design Pattern influenced by Learning JavaScript Design Patterns by Addy Osmani",
+                        "Medium blog post on the Factory Design Pattern (example code included)",
                     link: "https://medium.com/codex/efficient-object-creation-with-the-factory-design-pattern-in-javascript-e99e86b89d9f",
                 },
                 {
                     img: SingletonPatternArticleImg.src,
                     title: "One-and-Done with The Singleton Pattern (in JavaScript)",
                     description:
-                        "Medium blog post on the Singleton Pattern influenced by Learning JavaScript Design Patterns by Addy Osmani",
+                        "Medium blog post on the Singleton Pattern (example code included)",
                     link: "https://medium.com/@alexdel/one-and-done-with-the-singleton-pattern-in-javascript-d3075ee4631e",
                 },
             ],
