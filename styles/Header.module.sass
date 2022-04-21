@@ -4,10 +4,10 @@
 
 .headerLinks
     display: flex
-    flex-direction: row
-    align-items: center
+    flex-direction: column
+    align-items: flex-start
     justify-content: flex-start
-    column-gap: 25px
+    row-gap: 10px
     margin-top: 0px
     margin-left: 15px
     padding-top: 20px
@@ -96,6 +96,7 @@
 
 .headerLink
     color: white
+    text-shadow: -1px 1px #000000
     font-size: 1.5rem
     margin-bottom: 10px
 
@@ -108,15 +109,18 @@
     margin-bottom: 8px
     border-bottom: 2px solid green
 
+@media (max-width: 995px)
+    .headerLinks
+
 @media (max-width: 690px)
     .header
         background-color: rgba(0, 0, 0, 0.85)
 
     .headerLinks
+        flex-direction: row
+        align-items: center
         justify-content: center
         margin: 0px
         margin-right: 25px
-        padding-top: 35px
-        column-gap: 15px
-
-@media (max-width: 995px)
+        padding-top: 5px
+        column-gap: 20px
