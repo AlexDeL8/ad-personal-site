@@ -23,7 +23,7 @@ const WorkSection = (props) => {
                     link: "https://github.com/AlexDeL8/tenbot",
                 },
                 {
-                    img: ColorPickerImg.sr,
+                    img: ColorPickerImg.src,
                     title: "React Color Picker",
                     description:
                         "React widget to select, save, and delete colors",
