@@ -2,6 +2,9 @@ import React from "react";
 import mainStyles from "../../../styles/Home.module.sass";
 // import ReactLogo from "/public/main/react-icon.png";
 import TenBotImg from "/public/work/twitchBotBackground.jpg";
+import ColorPickerImg from "/public/work/ColorTab.png";
+import GithubSearchImg from "/public/work/GithubSearchedProfile.png";
+
 import FactoryPatternArticleImg from "/public/work/Factory.jpg";
 import SingletonPatternArticleImg from "/public/work/Satellite.jpg";
 
@@ -18,6 +21,20 @@ const WorkSection = (props) => {
                     description:
                         "Twitch IRC bot for Xbox Live profile achievement stats live in chat",
                     link: "https://github.com/AlexDeL8/tenbot",
+                },
+                {
+                    img: ColorPickerImg.sr,
+                    title: "React Color Picker",
+                    description:
+                        "React widget to select, save, and delete colors",
+                    link: "https://github.com/AlexDeL8/react-color-picker",
+                },
+                {
+                    img: GithubSearchImg.src,
+                    title: "Github User Card",
+                    description:
+                        "Learn some basic stats about your Github profile or anyone else's",
+                    link: "https://github.com/AlexDeL8/react-github-user-search",
                 },
             ],
         },
