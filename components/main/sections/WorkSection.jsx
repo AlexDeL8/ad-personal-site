@@ -1,6 +1,6 @@
 import React from "react";
 import mainStyles from "../../../styles/Home.module.sass";
-// import ReactLogo from "/public/main/react-icon.png";
+
 import TenBotImg from "/public/work/twitchBotBackground.jpg";
 import ColorPickerImg from "/public/work/ColorTab.png";
 import GithubSearchImg from "/public/work/GithubSearchedProfile.png";
@@ -54,6 +54,13 @@ const WorkSection = (props) => {
                     description:
                         "Medium blog post on the Singleton Pattern (example code included)",
                     link: "https://medium.com/@alexdel/one-and-done-with-the-singleton-pattern-in-javascript-d3075ee4631e",
+                },
+                {
+                    img: TenBotImg.src,
+                    title: "The Journey of TENbot: A Twitch chatbot in Node.js (Part 1)",
+                    description:
+                        "The design process of a Twitch chatbot made in Node.js that includes Xbox Live profile stat integration.",
+                    link: "https://medium.com/@alexdel/the-journey-of-tenbot-a-twitch-chatbot-in-node-js-part-1-660ca0206f20",
                 },
             ],
         },
