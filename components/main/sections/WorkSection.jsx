@@ -27,7 +27,7 @@ const WorkSection = (props) => {
                     title: "React Color Picker",
                     description:
                         "React widget to select, save, and delete colors",
-                    link: "https://github.com/AlexDeL8/react-color-picker",
+                    link: "https://codesandbox.io/s/color-picker-ursz0",
                 },
                 {
                     img: GithubSearchImg.src,
