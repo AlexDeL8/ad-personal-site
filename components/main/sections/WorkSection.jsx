@@ -33,8 +33,8 @@ const WorkSection = (props) => {
                     img: GithubSearchImg.src,
                     title: "Github User Card",
                     description:
-                        "Learn some basic stats about your Github profile or anyone else's",
-                    link: "https://github.com/AlexDeL8/react-github-user-search",
+                        "With a fully responsive design - learn some basic stats about yours or anyone else's Github profile",
+                    link: "https://codesandbox.io/s/github-user-card-4bhdr?file=/src",
                 },
             ],
         },
