@@ -79,7 +79,10 @@
         .aboutContentContainer
             width: 75%
             font-size: 1.25rem
-            padding-bottom: 5rem
+            padding-bottom: 3rem
+
+            .aboutContent:first-child
+                margin-top: 0
 
             .aboutContent
                 color: black
@@ -107,11 +110,10 @@
             height: 600px
             width: 400px
             border-top-right-radius: 12.5%
-            padding-top: 2rem
 
         .resumeNote
             font-size: 0.85rem
-            padding-bottom: 5rem
+            padding-bottom: 3rem
 
     @keyframes workItemHoverIn
         0%
@@ -140,12 +142,12 @@
         .workListLabel
             color: white
             font-size: 1.75rem
-            margin: 1.33rem 0px
+            margin: 0
 
         .workList
             list-style: none
             padding: 0px
-            padding-bottom: 2rem
+            padding-bottom: 0.75rem
             display: flex
             flex-direction: row
             flex-wrap: wrap
@@ -156,7 +158,7 @@
 
             .workItem
                 width: 325px
-                min-height: 425px
+                min-height: 400px
                 color: white
                 border: 10px solid grey
                 border-radius: 15px
@@ -168,12 +170,12 @@
                 animation-timing-function: cubic-bezier(0,0,.5,1)
                 animation-name: workItemHoverIn
                 box-shadow: 8px 5px 0px 1px #3b3b3b
+
                 .workItemTitle
                     text-decoration: underline
 
             .workItemImg
                 max-width: 100%
-                // width: 100%
                 height: 200px
                 border-top-left-radius: 5px
                 border-top-right-radius: 5px
@@ -200,6 +202,13 @@
                 a:hover
                     cursor: pointer
 
+@media (max-width: 690px)
+    .main
+        .aboutSection
+            .aboutContentContainer
+                width: 90%
+                font-size: 1.2rem
+
 @media (max-width: 499px)
     .main
         #mainSection
@@ -225,13 +234,41 @@
                 .frontEndCode
                     display: block
 
+        .aboutSection
+            .aboutContentContainer
+                text-align: center
+                font-size: 1.1rem
+
         .resumeSection
             .resumePreview
                 height: 550px
                 width: 325px
 
-@media (max-width: 690px)
+@media (max-width: 399px)
     .main
         .aboutSection
             .aboutContentContainer
-                width: 90%
+                font-size: 1rem
+
+        .workSection
+            .workList
+                .workItem
+                    width: 300px
+                    min-height: 350px
+                .workItemInfo
+                    .workItemTitle
+                        font-size: 1.25rem
+                    .workItemDescription
+                        font-size: 0.85rem
+
+@media (max-width: 349px)
+    .main
+        .resumeSection
+            .resumePreview
+                height: 500px
+                width: 275px
+
+        .workSection
+            .workList
+                .workItem
+                    width: 250px
