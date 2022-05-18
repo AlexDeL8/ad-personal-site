@@ -59,7 +59,7 @@ const WorkSection = (props) => {
                     img: TenBotImg.src,
                     title: "The Journey of TENbot: A Twitch chatbot in Node.js (Part 1)",
                     description:
-                        "The design process of a Twitch chatbot made in Node.js that includes Xbox Live profile stat integration.",
+                        "Design process of a Twitch chatbot that includes Xbox Live profile integration.",
                     link: "https://medium.com/@alexdel/the-journey-of-tenbot-a-twitch-chatbot-in-node-js-part-1-660ca0206f20",
                 },
             ],
