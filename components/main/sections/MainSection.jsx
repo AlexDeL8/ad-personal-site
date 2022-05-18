@@ -17,7 +17,11 @@ const MainSection = () => {
                 Alex De Luca
                 <p>(he/him)</p>
                 <code className={mainStyles.code}>
-                    Software Engineer - &#123;Frontend Focused&#125;
+                    Software Engineer
+                    <code className={mainStyles.symbolCode}> - </code>
+                    <code className={mainStyles.frontEndCode}>
+                        &#123;Frontend Focused&#125;
+                    </code>
                 </code>
             </h1>
             <ConnectLinks

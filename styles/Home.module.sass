@@ -25,8 +25,8 @@
         padding-bottom: 10rem
 
         .profilePic
-            width: 250px
-            height: 250px
+            max-width: 250px
+            max-height: 250px
             border-radius: 50%
             border: 5px solid rgba(255, 255, 255, 0.8)
 
@@ -52,6 +52,12 @@
             font-size: 1.1rem
             font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace
 
+            .symbolCode
+                display: inline-block
+
+            .frontEndCode
+                display: inline-block
+
     .sectionTitle
         color: white
         border-bottom: 3px solid green
@@ -71,7 +77,7 @@
             color: black
 
         .aboutContentContainer
-            width: 50%
+            width: 75%
             font-size: 1.25rem
             padding-bottom: 5rem
 
@@ -194,8 +200,38 @@
                 a:hover
                     cursor: pointer
 
-@media (max-width: 690px)
-    .aboutSection
-        padding: 0rem
+@media (max-width: 499px)
+    .main
+        #mainSection
+            .profilePic
+                margin-top: 3rem
+                width: 225px
+                height: 225px
 
-@media (max-width: 949px)
+            .description
+                font-size: 1.5rem
+                height: auto
+                padding: 0.5rem 3.5rem
+
+            .code
+                width: 100%
+                font-size: 1rem
+                padding: 0
+                padding-top: 0.5rem
+
+                .symbolCode
+                    display: none
+
+                .frontEndCode
+                    display: block
+
+        .resumeSection
+            .resumePreview
+                height: 550px
+                width: 325px
+
+@media (max-width: 690px)
+    .main
+        .aboutSection
+            .aboutContentContainer
+                width: 90%
