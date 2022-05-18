@@ -1,11 +1,20 @@
 import React from "react";
+import Image from "next/image";
+
 import mainStyles from "../../../../styles/Home.module.sass";
 
 const WorkItem = (props) => {
     return (
         <li className={mainStyles.workItem}>
             <a href={props.itemLink} target="_blank">
-                <img className={mainStyles.workItemImg} src={props.itemImg} />
+                <div className={mainStyles.workItemImgDiv}>
+                    <Image
+                        className={mainStyles.workItemImg}
+                        src={props.itemImg}
+                        alt="Portfolio item image"
+                        layout="fill"
+                    />
+                </div>
                 <div className={mainStyles.workItemInfo}>
                     <p className={mainStyles.workItemTitle}>
                         {props.itemTitle}
